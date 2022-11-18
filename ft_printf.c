@@ -6,7 +6,7 @@
 /*   By: dinunes- <dinunes-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 15:34:15 by dinunes-          #+#    #+#             */
-/*   Updated: 2022/11/18 10:53:51 by dinunes-         ###   ########.fr       */
+/*   Updated: 2022/11/18 17:05:51 by dinunes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,7 @@ int	ft_printf(const char *str, ...)
 	while (str[counter])
 	{
 		if (str[counter] == '%')
-		{
 			i += conversions((char *)&str[++counter], list);
-		}
 		else
 			i += ft_putchar(str[counter]);
 		counter++;
